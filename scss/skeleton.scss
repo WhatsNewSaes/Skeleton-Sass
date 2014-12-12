@@ -57,14 +57,14 @@ $global-radius:4px;
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.and{width:2px; }
 
 .container {
   position: relative; 
   width: 80%; 
   max-width: $container-width; 
   margin: 0 auto; 
-  padding: 0; }
+  padding: 0;
+  }
 .container .column,        
 .container .columns { 
   float: left; 
@@ -78,15 +78,10 @@ $global-radius:4px;
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  
   .container .column,
   .container .columns {
     margin-left: $column-margin; 
     padding: $column-padding;
-
-    border: 1px solid $light-gray; // for demo only
-    border-radius: $global-radius; // for demo only
-
   }
   
   .container .one.column,
