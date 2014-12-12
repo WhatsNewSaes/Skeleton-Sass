@@ -14,7 +14,7 @@ Check out <http://getskeleton.com> for documentation and details.
   * Download zip or clone the repo
   * cd to project folder
   * run `[sudo] npm install` (first time users)
-  * run `grunt` (to watch and compile less files)
+  * run `grunt` (to watch and compile sass files)
 
 ### What's in the download?
 
