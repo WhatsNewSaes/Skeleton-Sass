@@ -10,7 +10,7 @@
 
 
 /* Table of contents
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 - Variables
 - Grid
 - Base Styles
@@ -31,7 +31,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 // Colors
-  $primary-color: #33C3F0; 
+  $primary-color: #33C3F0;
 $secondary-color: #bbbbbb;
    $border-color: #bbbbbb;
      $link-color: #1EAEDB;
@@ -41,7 +41,7 @@ $secondary-color: #bbbbbb;
 
 // Grid Variables
 $container-width: 960px;
-  $total-columns: 12; 
+  $total-columns: 12;
    $column-width: 100 / $total-columns; // calculates individual column width based off of # of columns
   $column-margin: 3%; // space between columns
  $column-padding: 4px 8px; // space inside columns
@@ -58,7 +58,7 @@ $larger-than-desktophd: 1200px;
 // Typography
 $font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// Misc 
+// Misc
 $global-radius:4px;
 
 
@@ -66,31 +66,31 @@ $global-radius:4px;
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
-  position: relative; 
-  width: 80%; 
-  max-width: $container-width; 
-  margin: 0 auto; 
+  position: relative;
+  width: 80%;
+  max-width: $container-width;
+  margin: 0 auto;
   padding: 0;
   }
-.container .column,        
-.container .columns { 
-  float: left; 
-  width: 100%; 
+.container .column,
+.container .columns {
+  float: left;
+  width: 100%;
   box-sizing: border-box; }
-.row { 
+.row {
   margin-bottom: $row-space; }
-.row .column:first-child,        
-.row .columns:first-child { 
+.row .column:first-child,
+.row .columns:first-child {
   margin-left: 0; }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container .column,
   .container .columns {
-    margin-left: $column-margin; 
+    margin-left: $column-margin;
     padding: $column-padding;
   }
-  
+
   .container .one.column,
   .container .one.columns          { width: $column-width * 1 - ( $column-margin / 2 );  }
   .container .two.columns          { width: $column-width*2-($column-margin/2);  }
@@ -114,13 +114,13 @@ $global-radius:4px;
   .container .offset-by-one.column,
   .container .offset-by-one.columns       { margin-left: $column-width*1-($column-margin/2);  }
   .container .offset-by-two.column        { margin-left: $column-width*2-($column-margin/2);  }
-  .container .offset-by-three.column      { margin-left: $column-width*3-($column-margin/2);  }            
+  .container .offset-by-three.column      { margin-left: $column-width*3-($column-margin/2);  }
   .container .offset-by-four.column       { margin-left: $column-width*4-($column-margin/2);  }
   .container .offset-by-five.column       { margin-left: $column-width*5-($column-margin/2);  }
-  .container .offset-by-six.column        { margin-left: $column-width*6-($column-margin/2);  }            
+  .container .offset-by-six.column        { margin-left: $column-width*6-($column-margin/2);  }
   .container .offset-by-seven.column      { margin-left: $column-width*7-($column-margin/2);  }
   .container .offset-by-eight.column      { margin-left: $column-width*8-($column-margin/2);  }
-  .container .offset-by-nine.column       { margin-left: $column-width*9-($column-margin/2);  }          
+  .container .offset-by-nine.column       { margin-left: $column-width*9-($column-margin/2);  }
   .container .offset-by-ten.column        { margin-left: $column-width*10-($column-margin/2); }
   .container .offset-by-eleven.column     { margin-left: $column-width*11-($column-margin/2); }
 
@@ -135,22 +135,22 @@ $global-radius:4px;
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton 
+html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
-html { font-size: 62.5%; } 
+html { font-size: 62.5%; }
 
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: $font-family;
-  color: $font-color; 
+  color: $font-color;
 }
 
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 2rem; }
@@ -177,13 +177,13 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a { 
+a {
   color: $link-color; }
-a:hover { 
+a:hover {
   color: darken($link-color, 5%); }
 
 
-/* Buttons 
+/* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
@@ -204,7 +204,7 @@ input[type="button"] {
   line-height: 38px;
   padding: 0 30px;
   letter-spacing: .1rem;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   white-space: nowrap;
   box-sizing: border-box; }
 .button:hover,
@@ -297,18 +297,18 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul { 
+ul {
   list-style: circle inside; }
-ol { 
+ol {
   list-style: decimal inside; }
 ol, ul {
   margin-top: 0;
   padding-left: 0; }
-ul ul, 
+ul ul,
 ul ol,
-ol ol, 
-ol ul { 
-  margin: 1.5rem 0 1.5rem 3rem; 
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
@@ -400,7 +400,7 @@ hr {
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
-.u-cf { 
+.u-cf {
   content: "";
   display: table;
   clear: both; }
@@ -409,10 +409,10 @@ hr {
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
-Note: The best way to structure the use of media queries is to create the queries 
+Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons secion and style it 
-there. 
+on small devices, paste the mobile query code up in the buttons secion and style it
+there.
 */
 
 /* Larger than mobile */
