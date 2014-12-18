@@ -55,6 +55,9 @@ $container-width: 960px;
   $larger-than-desktop: 1000px;
 $larger-than-desktophd: 1200px;
 
+// Typography
+$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 // Misc 
 $global-radius:4px;
 
@@ -140,7 +143,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "elvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-family;
   color: $font-color; 
 }
 
