@@ -39,7 +39,7 @@ skeleton/
 Skeleton is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more. 
 - Minified, it's less than a kb
 - It's a starting point, not a UI framework 
-- No compiling or installing...just vanilla CSS
+- ~~No compiling or installing...just vanilla CSS~~
 
 
 ## Browser support
