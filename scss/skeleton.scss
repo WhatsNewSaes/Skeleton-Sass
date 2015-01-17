@@ -44,7 +44,7 @@ $secondary-color: #bbbbbb;
 $container-width: 960px;
   $total-columns: 12;
    $column-width: 100 / $total-columns; // calculates individual column width based off of # of columns
-  $column-margin: 3.666666666666%; // space between columns
+  $column-margin: 4.0%; // space between columns
  $column-padding: 4px 8px; // space inside columns
       $row-space:2rem; // Margin-bottom for .row
 
@@ -93,42 +93,42 @@ $global-radius:4px;
   }
 
   .container .one.column,
-  .container .one.columns          { width: $column-width * 1 - ($column-margin);  }
-  .container .two.columns          { width: $column-width * 2 - ($column-margin);  }
-  .container .three.columns        { width: $column-width * 3 - ($column-margin);  }
-  .container .four.columns         { width: $column-width * 4 - ($column-margin);  }
-  .container .five.columns         { width: $column-width * 5 - ($column-margin);  }
-  .container .six.columns          { width: $column-width * 6 - ($column-margin);  }
-  .container .seven.columns        { width: $column-width * 7 - ($column-margin);  }
-  .container .eight.columns        { width: $column-width * 8 - ($column-margin);  }
-  .container .nine.columns         { width: $column-width * 9 - ($column-margin);  }
-  .container .ten.columns          { width: $column-width * 10 - ($column-margin); }
-  .container .eleven.columns       { width: $column-width * 11 - ($column-margin); }
+  .container .one.columns          { width: $column-width * 1 - ($column-margin) + (1/3);  }
+  .container .two.columns          { width: $column-width * 2 - ($column-margin) + (2/3);  }
+  .container .three.columns        { width: $column-width * 3 - ($column-margin) + (3/3);  }
+  .container .four.columns         { width: $column-width * 4 - ($column-margin) + (4/3);  }
+  .container .five.columns         { width: $column-width * 5 - ($column-margin) + (5/3);  }
+  .container .six.columns          { width: $column-width * 6 - ($column-margin) + (6/3);  }
+  .container .seven.columns        { width: $column-width * 7 - ($column-margin) + (7/3);  }
+  .container .eight.columns        { width: $column-width * 8 - ($column-margin) + (8/3);  }
+  .container .nine.columns         { width: $column-width * 9 - ($column-margin) + (9/3);  }
+  .container .ten.columns          { width: $column-width * 10 - ($column-margin) + (10/3); }
+  .container .eleven.columns       { width: $column-width * 11 - ($column-margin) + (11/3); }
   .container .twelve.columns       { width: 100%; margin-left: 0; }
 
-  .container .one-third.column     { width: $column-width * 4 - ($column-margin );  }
-  .container .two-thirds.column    { width: $column-width * 8 - ($column-margin );  }
+  .container .one-third.column     { width: $column-width * 4 - ($column-margin )  + (4/3);  }
+  .container .two-thirds.column    { width: $column-width * 8 - ($column-margin )  + (8/3);  }
 
-  .container .one-half.column      { width: $column-width * 6 - ($column-margin );  }
+  .container .one-half.column      { width: $column-width * 6 - ($column-margin ) + (6/3);  }
 
 /* Offsets */
   .container .offset-by-one.column,
-  .container .offset-by-one.columns       { margin-left: $column-width * 1 - ($column-margin);  }
-  .container .offset-by-two.column        { margin-left: $column-width * 2 - ($column-margin);  }
-  .container .offset-by-three.column      { margin-left: $column-width * 3 - ($column-margin);  }
-  .container .offset-by-four.column       { margin-left: $column-width * 4 - ($column-margin);  }
-  .container .offset-by-five.column       { margin-left: $column-width * 5 - ($column-margin);  }
-  .container .offset-by-six.column        { margin-left: $column-width * 6 - ($column-margin);  }
-  .container .offset-by-seven.column      { margin-left: $column-width * 7 - ($column-margin);  }
-  .container .offset-by-eight.column      { margin-left: $column-width * 8 - ($column-margin);  }
-  .container .offset-by-nine.column       { margin-left: $column-width * 9 - ($column-margin);  }
-  .container .offset-by-ten.column        { margin-left: $column-width * 10 - ($column-margin); }
-  .container .offset-by-eleven.column     { margin-left: $column-width * 11 - ($column-margin); }
+  .container .offset-by-one.columns       { margin-left: percentage(($column-width * 1 + (1/3)) / 100);  }
+  .container .offset-by-two.column        { margin-left: percentage(($column-width * 2 + (2/3)) / 100);  }
+  .container .offset-by-three.column      { margin-left: percentage(($column-width * 3 + (3/3)) / 100);  }
+  .container .offset-by-four.column       { margin-left: percentage(($column-width * 4 + (4/3)) / 100);  }
+  .container .offset-by-five.column       { margin-left: percentage(($column-width * 5 + (5/3)) / 100);  }
+  .container .offset-by-six.column        { margin-left: percentage(($column-width * 6 + (6/3)) / 100);  }
+  .container .offset-by-seven.column      { margin-left: percentage(($column-width * 7 + (7/3)) / 100);  }
+  .container .offset-by-eight.column      { margin-left: percentage(($column-width * 8 + (8/3)) / 100);  }
+  .container .offset-by-nine.column       { margin-left: percentage(($column-width * 9 + (9/3)) / 100);  }
+  .container .offset-by-ten.column        { margin-left: percentage(($column-width * 10 + (10/3)) / 100); }
+  .container .offset-by-eleven.column     { margin-left: percentage(($column-width * 11 + (11/3)) / 100); }
 
-  .container .offset-by-one-third.column  { margin-left: $column-width * 4 - ($column-margin); }
-  .container .offset-by-two-thirds.column { margin-left: $column-width * 8 - ($column-margin); }
+  .container .offset-by-one-third.column  { margin-left: percentage(($column-width * 4 + (4/3)) / 100); }
+  .container .offset-by-two-thirds.column { margin-left: percentage(($column-width * 8 + (8/3)) / 100); }
 
-  .container .offset-by-one-half.column   { margin-left: $column-width * 1 - ($column-margin); }
+  .container .offset-by-one-half.column   { margin-left: percentage(($column-width * 6 + (6/3)) / 100); }
 
 }
 
