@@ -53,7 +53,7 @@ $container-width-larger-than-mobile: 85%;
 $container-width-larger-than-phablet: 80%;
 $total-columns: 12;
 $column-width: 100 / $total-columns; // calculates individual column width based off of # of columns
-$column-margin: 3.666666666666%; // space between columns
+$column-margin: 4%; // space between columns
 
 // Misc
 $global-radius: 4px;
@@ -100,38 +100,38 @@ $global-radius: 4px;
   }
 
   .one.column,
-  .one.columns          { width: $column-width * 1.00  - ($column-margin);  }
-  .two.columns          { width: $column-width * 2.04  - ($column-margin);  }
-  .three.columns        { width: $column-width * 3.08  - ($column-margin);  }
+  .one.columns          { width: $column-width * 1  - ($column-margin) + (1/3); }
+  .two.columns          { width: $column-width * 2  - ($column-margin) + (2/3); }
+  .three.columns        { width: $column-width * 3  - ($column-margin) + (3/3); }
   .four.columns,
-  .one-third.column     { width: $column-width * 4.12  - ($column-margin);  }
-  .five.columns         { width: $column-width * 5.16  - ($column-margin);  }
+  .one-third.column     { width: $column-width * 4  - ($column-margin) + (4/3); }
+  .five.columns         { width: $column-width * 5  - ($column-margin) + (5/3); }
   .six.columns,
-  .one-half.column      { width: $column-width * 6.20  - ($column-margin);  }
-  .seven.columns        { width: $column-width * 7.24  - ($column-margin);  }
+  .one-half.column      { width: $column-width * 6  - ($column-margin) + (6/3); }
+  .seven.columns        { width: $column-width * 7  - ($column-margin) + (7/3); }
   .eight.columns,
-  .two-thirds.column    { width: $column-width * 8.28  - ($column-margin);  }
-  .nine.columns         { width: $column-width * 9.32  - ($column-margin);  }
-  .ten.columns          { width: $column-width * 10.36 - ($column-margin);  }
-  .eleven.columns       { width: $column-width * 11.40 - ($column-margin);  }
+  .two-thirds.column    { width: $column-width * 8  - ($column-margin) + (8/3); }
+  .nine.columns         { width: $column-width * 9  - ($column-margin) + (9/3); }
+  .ten.columns          { width: $column-width * 10 - ($column-margin) + (10/3); }
+  .eleven.columns       { width: $column-width * 11 - ($column-margin) + (11/3); }
   .twelve.columns       { width: 100%; margin-left: 0; }
 
   /* Offsets */
   .offset-by-one.column,
-  .offset-by-one.columns       { margin-left: $column-width * 1.00  - ($column-margin);  }
-  .offset-by-two.column        { margin-left: $column-width * 2.04  - ($column-margin);  }
-  .offset-by-three.column      { margin-left: $column-width * 3.08  - ($column-margin);  }
+  .offset-by-one.columns       { margin-left: percentage(($column-width * 1  + (1/3)) / 100);  }
+  .offset-by-two.column        { margin-left: percentage(($column-width * 2  + (2/3)) / 100);  }
+  .offset-by-three.column      { margin-left: percentage(($column-width * 3  + (3/3)) / 100);  }
   .offset-by-four.column,
-  .offset-by-one-third.column  { margin-left: $column-width * 4.12  - ($column-margin);  }
-  .offset-by-five.column       { margin-left: $column-width * 5.16  - ($column-margin);  }
+  .offset-by-one-third.column  { margin-left: percentage(($column-width * 4  + (4/3)) / 100);  }
+  .offset-by-five.column       { margin-left: percentage(($column-width * 5  + (5/3)) / 100);  }
   .offset-by-six.column,
-  .offset-by-one-half.column   { margin-left: $column-width * 6.20  - ($column-margin);  }
-  .offset-by-seven.column      { margin-left: $column-width * 7.24  - ($column-margin);  }
+  .offset-by-one-half.column   { margin-left: percentage(($column-width * 6  + (6/3)) / 100);  }
+  .offset-by-seven.column      { margin-left: percentage(($column-width * 7  + (7/3)) / 100);  }
   .offset-by-eight.column,
-  .offset-by-two-thirds.column { margin-left: $column-width * 8.28  - ($column-margin);  }
-  .offset-by-nine.column       { margin-left: $column-width * 9.32  - ($column-margin);  }
-  .offset-by-ten.column        { margin-left: $column-width * 10.36 - ($column-margin);  }
-  .offset-by-eleven.column     { margin-left: $column-width * 11.14 - ($column-margin);  }
+  .offset-by-two-thirds.column { margin-left: percentage(($column-width * 8  + (8/3)) / 100);  }
+  .offset-by-nine.column       { margin-left: percentage(($column-width * 9  + (9/3)) / 100);  }
+  .offset-by-ten.column        { margin-left: percentage(($column-width * 10 + (10/3)) / 100); }
+  .offset-by-eleven.column     { margin-left: percentage(($column-width * 11 + (11/3)) / 100); }
 
 }
 
