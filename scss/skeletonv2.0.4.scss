@@ -39,6 +39,7 @@ $bp-larger-than-desktophd : "min-width: 1200px";
 $light-grey: #e1e1e1;
 $dark-grey: #333;
 $primary-colour: #33c3f0;
+$secondary-colour: lighten($dark-grey, 13.5%);
 $border-colour: #bbb;
 $link-colour: #1eaedb;
 $font-colour: #222;
@@ -53,6 +54,9 @@ $container-width-larger-than-phablet: 80%;
 $total-columns: 12;
 $column-width: 100 / $total-columns; // calculates individual column width based off of # of columns
 $column-margin: 3.666666666666%; // space between columns
+
+// Misc
+$global-radius: 4px;
 
 // Grid
 //––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -158,62 +162,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-h1 {
-  font-size: 4.0rem;
-  line-height: 1.2;
-  letter-spacing: -.1rem;
-}
-
-h2 {
-  font-size: 3.6rem;
-  line-height: 1.25;
-  letter-spacing: -.1rem;
-}
-
-h3 {
-  font-size: 3.0rem;
-  line-height: 1.3;
-  letter-spacing: -.1rem;
-}
-
-h4 {
-  font-size: 2.4rem;
-  line-height: 1.35;
-  letter-spacing: -.08rem;
-}
-
-h5 {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  letter-spacing: -.05rem;
-}
-
-h6 {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  letter-spacing: 0;
-}
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;  }
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem;  }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem;  }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;       }
 
 // Larger than phablet
 @media (#{$bp-larger-than-phablet}) {
-  h1 {
-    font-size: 5.0rem;
-  }
-  h2 {
-    font-size: 4.2rem;
-  }
-  h3 {
-    font-size: 3.6rem;
-  }
-  h4 {
-    font-size: 3.0rem;
-  }
-  h5 {
-    font-size: 2.4rem;
-  }
-  h6 {
-    font-size: 1.5rem;
-  }
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
 }
 
 p {
@@ -237,7 +200,7 @@ a {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: lighten($dark-grey, 13.5%);
+  color: $secondary-colour;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -247,7 +210,7 @@ a {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: $global-radius;
   border: 1px solid $border-colour;
   cursor: pointer;
   box-sizing: border-box;
@@ -258,7 +221,7 @@ input {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
-    color: lighten($dark-grey, 13.5%);
+    color: $secondary-colour;
     text-align: center;
     font-size: 11px;
     font-weight: 600;
@@ -268,7 +231,7 @@ input {
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
-    border-radius: 4px;
+    border-radius: $global-radius;
     border: 1px solid $border-colour;
     cursor: pointer;
     box-sizing: border-box;
@@ -348,7 +311,7 @@ input {
     padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
     background-color: #fff;
     border: 1px solid lighten($border-colour, 8.8%);
-    border-radius: 4px;
+    border-radius: $global-radius;
     box-shadow: none;
     box-sizing: border-box;
   }
@@ -362,7 +325,7 @@ textarea, select {
   padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: #fff;
   border: 1px solid lighten($border-colour, 8.8%);
-  border-radius: 4px;
+  border-radius: $global-radius;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -463,7 +426,7 @@ code {
   white-space: nowrap;
   background: lighten($light-grey, 6.4%);
   border: 1px solid $light-grey;
-  border-radius: 4px;
+  border-radius: $global-radius;
 }
 
 pre > code {
