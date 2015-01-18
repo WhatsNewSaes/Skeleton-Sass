@@ -18,27 +18,26 @@ Check out <http://getskeleton.com> for documentation and details.
 
 ### What's in the download?
 
-The download includes Skeleton's CSS, Normalize CSS as a reset, a sample favicon, and an index.html as a starting point.
+The download includes Skeleton's CSS, ~~Normalize CSS as a reset,~~ a sample favicon, and an index.html as a starting point.
 
 ```
 skeleton/
 ├── index.html
-├── css/
-│   ├── normalize.min.css
-│   └── skeleton.css
 ├── scss/
 │   └── skeleton.scss
 ├── images/
-│   └── favicon.ico
+│   └── favicon.png
+├── package.json
+├── Gruntfile.js
 └── README.md
 
 ```
 
 ### Why it's awesome
 
-Skeleton is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more. 
+Skeleton is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more.
 - Minified, it's less than a kb
-- It's a starting point, not a UI framework 
+- It's a starting point, not a UI framework
 - ~~No compiling or installing...just vanilla CSS~~
 
 
