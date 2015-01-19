@@ -35,14 +35,14 @@ $bp-larger-than-tablet    : "min-width: 750px";
 $bp-larger-than-desktop   : "min-width: 1000px";
 $bp-larger-than-desktophd : "min-width: 1200px";
 
-// Colours
+// Colors
 $light-grey: #e1e1e1;
 $dark-grey: #333;
-$primary-colour: #33c3f0;
-$secondary-colour: lighten($dark-grey, 13.5%);
-$border-colour: #bbb;
-$link-colour: #1eaedb;
-$font-colour: #222;
+$primary-color: #33c3f0;
+$secondary-color: lighten($dark-grey, 13.5%);
+$border-color: #bbb;
+$link-color: #1eaedb;
+$font-color: #222;
 
 // Typography
 $font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -168,7 +168,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: $font-family;
-  color: $font-colour;
+  color: $font-color;
 }
 
 // Typography
@@ -205,9 +205,9 @@ p {
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 a {
-  color: $link-colour;
+  color: $link-color;
   &:hover {
-    color: darken($link-colour, 5%);
+    color: darken($link-color, 5%);
   }
 }
 
@@ -219,7 +219,7 @@ button {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: $secondary-colour;
+  color: $secondary-color;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -230,7 +230,7 @@ button {
   white-space: nowrap;
   background-color: transparent;
   border-radius: $global-radius;
-  border: 1px solid $border-colour;
+  border: 1px solid $border-color;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -242,7 +242,7 @@ input {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
-    color: $secondary-colour;
+    color: $secondary-color;
     text-align: center;
     font-size: 11px;
     font-weight: 600;
@@ -253,7 +253,7 @@ input {
     white-space: nowrap;
     background-color: transparent;
     border-radius: $global-radius;
-    border: 1px solid $border-colour;
+    border: 1px solid $border-color;
     cursor: pointer;
     box-sizing: border-box;
   }
@@ -296,8 +296,8 @@ input {
 .button.button-primary,
 button.button-primary {
   color: #fff;
-  background-color: $primary-colour;
-  border-color: $primary-colour;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }
 
 input {
@@ -305,16 +305,16 @@ input {
   &[type="reset"].button-primary,
   &[type="button"].button-primary {
     color: #fff;
-    background-color: $primary-colour;
-    border-color: $primary-colour;
+    background-color: $primary-color;
+    border-color: $primary-color;
   }
 }
 
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
-  background-color: $link-colour;
-  border-color: $link-colour;
+  background-color: $link-color;
+  border-color: $link-color;
 }
 
 input {
@@ -322,16 +322,16 @@ input {
   &[type="reset"].button-primary:hover,
   &[type="button"].button-primary:hover {
     color: #fff;
-    background-color: $link-colour;
-    border-color: $link-colour;
+    background-color: $link-color;
+    border-color: $link-color;
   }
 }
 
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: $link-colour;
-  border-color: $link-colour;
+  background-color: $link-color;
+  border-color: $link-color;
 }
 
 input {
@@ -339,8 +339,8 @@ input {
   &[type="reset"].button-primary:focus,
   &[type="button"].button-primary:focus {
     color: #fff;
-    background-color: $link-colour;
-    border-color: $link-colour;
+    background-color: $link-color;
+    border-color: $link-color;
   }
   &[type="email"],
   &[type="number"],
@@ -352,7 +352,7 @@ input {
     height: 38px;
     padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
     background-color: #fff;
-    border: 1px solid lighten($border-colour, 8.8%);
+    border: 1px solid lighten($border-color, 8.8%);
     border-radius: $global-radius;
     box-shadow: none;
     box-sizing: border-box;
@@ -367,7 +367,7 @@ select {
   height: 38px;
   padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: #fff;
-  border: 1px solid lighten($border-colour, 8.8%);
+  border: 1px solid lighten($border-color, 8.8%);
   border-radius: $global-radius;
   box-shadow: none;
   box-sizing: border-box;
@@ -405,14 +405,14 @@ input {
   &[type="tel"]:focus,
   &[type="url"]:focus,
   &[type="password"]:focus {
-    border: 1px solid $primary-colour;
+    border: 1px solid $primary-color;
     outline: 0;
   }
 }
 
 textarea:focus,
 select:focus {
-  border: 1px solid $primary-colour;
+  border: 1px solid $primary-color;
   outline: 0;
 }
 
