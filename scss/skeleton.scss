@@ -60,11 +60,11 @@ $global-radius: 4px;
 
 // Functions
 @function grid-column-width($n) {
-  @return $column-width * $n - ($column-margin) + ($n/3);
+  @return $column-width * $n - ($column-margin*($total-columns - $n)/$total-columns);
 }
 
 @function grid-offset-length($n) {
-  @return percentage(($column-width * $n  + ($n/3)) / 100);
+  @return grid-column-width($n) + $column-margin;
 }
 
 // Grid
@@ -101,7 +101,7 @@ $global-radius: 4px;
   }
   .column,
   .columns {
-    margin-left: 4%;
+    margin-left: $column-margin;
   }
   .column:first-child,
   .columns:first-child {
