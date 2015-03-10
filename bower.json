@@ -6,7 +6,7 @@
     "Seth Coelen <scoelen89@gmail.com> (http://SethCoelen.com)"
   ],
   "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
-  "main": "skeleton.scss",
+  "main": "scss/skeleton.scss",
   "keywords": [
     "skeleton",
     "sass",
