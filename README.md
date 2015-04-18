@@ -1,4 +1,11 @@
 # [Skeleton-Sass](http://getskeleton.com)
+
+Skeleton-Sass is the (un)official Sass version of [Dave Gamache's](https://twitter.com/dhg) Skeleton Framework
+
+Skeleton-Sass currently featues a stable 2.0.4 version of Skeleton.
+
+-----
+
 Skeleton is a simple, responsive boilerplate to kickstart any responsive project.
 
 Check out <http://getskeleton.com> for documentation and details.
@@ -11,7 +18,7 @@ Check out <http://getskeleton.com> for documentation and details.
   * [grunt.js](http://grunt.js); `[sudo] npm install -g grunt-cli`
 
 ### Install Local Dependancies
-  * Download zip or clone the repo
+  * [Download zip](https://github.com/whatsnewsaes/Skeleton-Sass/archive/master.zip), [clone the repo](github-mac://openRepo/https://github.com/whatsnewsaes/Skeleton-Sass) or `bower install skeleton-sass' from your terminal
   * cd to project folder
   * run `[sudo] npm install` (first time users)
   * run `grunt` (to watch and compile sass files)
@@ -32,6 +39,11 @@ skeleton/
 └── README.md
 
 ```
+
+### Contributions
+The goal of Skeleton-Sass is to have a mirrored Sass repository of Skeleton. In order to keep the integrity of the original Skeleton framework, I cannot accept any features or functionality outside the original implementation of [Dave Gamache's](https://twitter.com/dhg) [Skeleton Framework](https://github.com/dhg/Skeleton). If you would like to see features, functionality, or extensions outside of the original please make a PR / or issue on the original skeleton framework.
+
+If you have sass improvements, additional mixins, or other helpful sass techniques that stay within the original codebase. Feel free to make a pull request!
 
 ### Why it's awesome
 
@@ -54,7 +66,7 @@ The above list is non-exhaustive. Skeleton works perfectly with almost all older
 
 ## License
 
-All parts of Skeleton are free to use and abuse under the [open-source MIT license](http://opensource.org/licenses/mit-license.php).
+All parts of Skeleton-sass are free to use and abuse under the [open-source MIT license](http://opensource.org/licenses/mit-license.php).
 
 
 ## Colophon
