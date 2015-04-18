@@ -2,7 +2,7 @@
 
 Skeleton-Sass is the (un)official Sass version of [Dave Gamache's](https://twitter.com/dhg) Skeleton Framework
 
-Skeleton-Sass currently featues a stable 2.0.4 version of Skeleton.
+Skeleton-Sass currently featues a stable version of Skeleton 2.0.4
 
 -----
 
