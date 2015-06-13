@@ -13,7 +13,7 @@ Check out <http://getskeleton.com> for documentation and details.
 ### Install Global Dependancies
   * [Node.js](http://nodejs.org)
   * [bower](http://bower.io): `[sudo] npm install bower -g`
-  * [grunt.js](http://grunt.js); `[sudo] npm install -g grunt-cli`
+  * [grunt.js](http://gruntjs.com): `[sudo] npm install -g grunt-cli`
 
 ### Install Local Dependancies
   * [Download zip](https://github.com/whatsnewsaes/Skeleton-Sass/archive/master.zip), [clone the repo](github-mac://openRepo/https://github.com/whatsnewsaes/Skeleton-Sass) or `bower install skeleton-sass` from your terminal
