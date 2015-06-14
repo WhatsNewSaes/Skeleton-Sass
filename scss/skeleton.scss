@@ -84,6 +84,7 @@ $global-radius: 4px !default;
   width: 100%;
   float: left;
   box-sizing: border-box;
+  position: relative;
 }
 
 // For devices larger than 400px
@@ -162,6 +163,33 @@ $global-radius: 4px !default;
   .offset-by-one-half.column   { margin-left: grid-offset-length(6);  }
 
 
+// Push & Pull
+  .push-by-one                   { left: grid-offset-length(1); }
+  .push-by-two                   { left: grid-offset-length(2); }
+  .push-by-three                 { left: grid-offset-length(3); }
+  .push-by-four                  { left: grid-offset-length(4); }
+  .push-by-five                  { left: grid-offset-length(5); }
+  .push-by-six                   { left: grid-offset-length(6); }
+  .push-by-seven                 { left: grid-offset-length(7); }
+  .push-by-eight                 { left: grid-offset-length(8); }
+  .push-by-nine                  { left: grid-offset-length(9); }
+  .push-by-ten                   { left: grid-offset-length(10); }
+  .push-by-eleven                { left: grid-offset-length(11); }
+  .push-by-twelve                { left: grid-offset-length(12); }
+
+  .pull-by-one                   { left: - grid-offset-length(1); }
+  .pull-by-two                   { left: - grid-offset-length(2); }
+  .pull-by-three                 { left: - grid-offset-length(3); }
+  .pull-by-four                  { left: - grid-offset-length(4); }
+  .pull-by-five                  { left: - grid-offset-length(5); }
+  .pull-by-six                   { left: - grid-offset-length(6); }
+  .pull-by-seven                 { left: - grid-offset-length(7); }
+  .pull-by-eight                 { left: - grid-offset-length(8); }
+  .pull-by-nine                  { left: - grid-offset-length(9); }
+  .pull-by-ten                   { left: - grid-offset-length(10); }
+  .pull-by-eleven                { left: - grid-offset-length(11); }
+  .pull-by-twelve                { left: - grid-offset-length(12); }
+  
 }
 
 // Base Styles
@@ -570,6 +598,19 @@ form {
 
 .u-pull-left {
   float: left;
+}
+
+
+// Fix Pull for grid
+.u-pull-left{
+  &.column, &.columns{
+    margin:0px;
+  }
+}
+.u-pull-right{
+  &.column, &.columns{
+    margin:0px;
+  }
 }
 
 // Misc
