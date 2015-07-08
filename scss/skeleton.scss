@@ -67,6 +67,16 @@ $global-radius: 4px !default;
   @return grid-column-width($n) + $column-margin;
 }
 
+// Mixins
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-" + $property}: #{$value};
+    }
+  }
+  #{$property}: #{$value};
+}
+
 // Grid
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -76,14 +86,14 @@ $global-radius: 4px !default;
   max-width: $container-width;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
+  @include prefix(box-sizing, border-box, webkit moz);
 }
 
 .column,
 .columns {
   width: 100%;
   float: left;
-  box-sizing: border-box;
+  @include prefix(box-sizing, border-box, webkit moz);
 }
 
 // For devices larger than 400px
@@ -240,10 +250,10 @@ button {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: $global-radius;
+  @include prefix(border-radius, $global-radius, webkit moz);
   border: 1px solid $border-color;
   cursor: pointer;
-  box-sizing: border-box;
+  @include prefix(box-sizing, border-box, webkit moz);
 }
 
 input {
@@ -263,10 +273,10 @@ input {
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
-    border-radius: $global-radius;
+    @include prefix(border-radius, $global-radius, webkit moz);
     border: 1px solid $border-color;
     cursor: pointer;
-    box-sizing: border-box;
+    @include prefix(box-sizing, border-box, webkit moz);
   }
 }
 
@@ -364,9 +374,9 @@ input {
     padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
     background-color: #fff;
     border: 1px solid lighten($border-color, 8.8%);
-    border-radius: $global-radius;
+    @include prefix(border-radius, $global-radius, webkit moz);
     box-shadow: none;
-    box-sizing: border-box;
+    @include prefix(box-sizing, border-box, webkit moz);
   }
 }
 
@@ -379,9 +389,9 @@ select {
   padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: #fff;
   border: 1px solid lighten($border-color, 8.8%);
-  border-radius: $global-radius;
+  @include prefix(border-radius, $global-radius, webkit moz);
   box-shadow: none;
-  box-sizing: border-box;
+  @include prefix(box-sizing, border-box, webkit moz);
 }
 
 // Removes awkward default styles on some inputs for iOS
@@ -393,16 +403,12 @@ input {
   &[type="tel"],
   &[type="url"],
   &[type="password"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    @include prefix(appearance, none, webkit moz);
   }
 }
 
 textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  @include prefix(appearance, none, webkit moz);
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -495,7 +501,7 @@ code {
   white-space: nowrap;
   background: lighten($light-grey, 6.4%);
   border: 1px solid $light-grey;
-  border-radius: $global-radius;
+  @include prefix(border-radius, $global-radius, webkit moz);
 }
 
 pre > code {
@@ -556,12 +562,12 @@ form {
 
 .u-full-width {
   width: 100%;
-  box-sizing: border-box;
+  @include prefix(box-sizing, border-box, webkit moz);
 }
 
 .u-max-full-width {
   max-width: 100%;
-  box-sizing: border-box;
+  @include prefix(box-sizing, border-box, webkit moz);
 }
 
 .u-pull-right {
