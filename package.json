@@ -4,7 +4,9 @@
   "description": "Skeleton: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-sass": "~0.8.1"
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-rename": "0.0.3",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-watch": "~0.6.1"
   }
 }
