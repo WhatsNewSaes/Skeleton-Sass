@@ -8,5 +8,8 @@
     "grunt-contrib-rename": "0.0.3",
     "grunt-contrib-sass": "~0.8.1",
     "grunt-contrib-watch": "~0.6.1"
+  },
+  "scripts": {
+    "postinstall": "bower install"
   }
 }
