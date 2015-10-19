@@ -2,3 +2,4 @@ node_modules
 css
 .sass-cache
 bower_components
+scss/_normalize.scss
