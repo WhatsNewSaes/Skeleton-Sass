@@ -1,7 +1,24 @@
 {
-  "name": "Skeleton-Sass",
+  "name": "skeleton-scss",
   "version": "2.0.4",
-  "description": "Skeleton: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
+  "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
+  "repository": {
+   "type": "git",
+   "url": "https://github.com/WhatsNewSaes/Skeleton-Sass"
+  },
+  "bugs": {
+    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass/issues"
+  },
+  "homepage": "https://github.com/whatsnewsaes/Skeleton-Sass",
+  "author": "Seth Coelen <scoelen89@gmail.com>  (http://sethcoelen.com/)",
+  "keywords": [
+    "skeleton",
+    "sass",
+    "scss",
+    "responsive",
+    "boilerplate"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-watch": "~0.6.1",
