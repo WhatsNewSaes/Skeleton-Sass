@@ -3,8 +3,8 @@
   "version": "2.0.4",
   "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
   "repository": {
-   "type": "git",
-   "url": "https://github.com/WhatsNewSaes/Skeleton-Sass"
+    "type": "git",
+    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass"
   },
   "bugs": {
     "url": "https://github.com/WhatsNewSaes/Skeleton-Sass/issues"
@@ -22,6 +22,8 @@
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-sass": "~0.8.1"
+    "grunt-contrib-sass": "~0.8.1",
+    "node-sass": "~3.4.2",
+    "grunt-sass": "~1.1.0"
   }
 }
