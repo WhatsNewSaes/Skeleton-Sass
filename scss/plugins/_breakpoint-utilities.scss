@@ -1,0 +1,109 @@
+// Hide/show elements at breakpoints
+// Author: Troy Meier
+// URL: http://twkm.ca
+
+.u-show-mobile,
+.u-show-phablet,
+.u-show-tablet,
+.u-show-desktop,
+.u-show-desktop-hd {
+  display: none;
+}
+
+@media (#{$bp-larger-than-mobile}) {
+    .u-hide-mobile {
+      display: none;
+    }
+
+    .u-show-mobile-block {
+      display: block;
+    }
+
+    .u-show-mobile-inline-block {
+      display: inline-block;
+    }
+
+    .u-show-mobile-inline {
+      display: inline;
+    }
+}
+
+@media (#{$bp-larger-than-phablet}) {
+
+    .u-hide-phablet {
+      display: none;
+    }
+
+    .u-show-phablet-block {
+      display: block;
+    }
+
+    .u-show-phablet-inline-block {
+      display: inline-block;
+    }
+
+    .u-show-phablet-inline {
+      display: inline;
+    }
+
+}
+
+@media (#{$bp-larger-than-tablet }) {
+
+    .u-hide-tablet {
+      display: none;
+    }
+
+    .u-show-tablet-block {
+      display: block;
+    }
+
+    .u-show-tablet-inline-block {
+      display: inline-block;
+    }
+
+    .u-show-tablet-inline {
+      display: inline;
+    }
+
+}
+
+@media (#{$bp-larger-than-desktop}) {
+
+    .u-hide-desktop {
+      display: none;
+    }
+
+    .u-show-desktop-block {
+      display: block;
+    }
+
+    .u-show-desktop-inline-block {
+      display: inline-block;
+    }
+
+    .u-show-desktop-inline {
+      display: inline;
+    }
+
+}
+
+@media (#{$bp-larger-than-mobile}) {
+
+    .u-hide-desktop-hd {
+      display: none;
+    }
+
+    .u-show-desktop-hd-block {
+      display: block;
+    }
+
+    .u-show-desktop-hd-inline-block {
+      display: inline-block;
+    }
+
+    .u-show-desktop-hd-inline {
+      display: inline;
+    }
+
+}
