@@ -10,7 +10,7 @@
   display: none;
 }
 
-@media (min-width: #{$bp-larger-than-mobile}) and (max-width: ($bp-larger-than-phablet - 1px)) {
+@media (max-width: ($bp-larger-than-phablet - 1px)) {
 
     .u-hide-mobile {
       display: none;
