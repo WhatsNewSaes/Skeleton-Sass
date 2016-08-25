@@ -10,7 +10,8 @@
   display: none;
 }
 
-@media (#{$bp-larger-than-mobile}) {
+@media (min-width: #{$bp-larger-than-mobile}) and (max-width: ($bp-larger-than-phablet - 1px)) {
+
     .u-hide-mobile {
       display: none;
     }
@@ -28,7 +29,7 @@
     }
 }
 
-@media (#{$bp-larger-than-phablet}) {
+@media (min-width: #{$bp-larger-than-phablet}) and (max-width: ($bp-larger-than-tablet - 1px)) {
 
     .u-hide-phablet {
       display: none;
@@ -48,7 +49,7 @@
 
 }
 
-@media (#{$bp-larger-than-tablet }) {
+@media (min-width: #{$bp-larger-than-tablet }) and (max-width: ($bp-larger-than-desktop - 1px)) {
 
     .u-hide-tablet {
       display: none;
@@ -68,7 +69,7 @@
 
 }
 
-@media (#{$bp-larger-than-desktop}) {
+@media (min-width: #{$bp-larger-than-desktop}) and (max-width: ($bp-larger-than-desktophd - 1px)) {
 
     .u-hide-desktop {
       display: none;
@@ -88,21 +89,21 @@
 
 }
 
-@media (#{$bp-larger-than-mobile}) {
+@media (min-width: #{$bp-larger-than-desktophd}) {
 
-    .u-hide-desktop-hd {
+    .u-hide-desktophd {
       display: none;
     }
 
-    .u-show-desktop-hd-block {
+    .u-show-desktophd-block {
       display: block;
     }
 
-    .u-show-desktop-hd-inline-block {
+    .u-show-desktophd-inline-block {
       display: inline-block;
     }
 
-    .u-show-desktop-hd-inline {
+    .u-show-desktophd-inline {
       display: inline;
     }
 

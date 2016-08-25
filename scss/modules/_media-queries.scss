@@ -7,16 +7,16 @@
 // there.
 
 // Larger than mobile
-@media (#{$bp-larger-than-mobile}) {}
+@media (min-width: #{$bp-larger-than-mobile}) {}
 
 // Larger than phablet (also point when grid becomes active)
-@media (#{$bp-larger-than-phablet}) {}
+@media (min-width: #{$bp-larger-than-phablet}) {}
 
 // Larger than tablet
-@media (#{$bp-larger-than-tablet}) {}
+@media (min-width: #{$bp-larger-than-tablet}) {}
 
 // Larger than desktop
-@media (#{$bp-larger-than-desktop}) {}
+@media (min-width: #{$bp-larger-than-desktop}) {}
 
 // Larger than Desktop HD
-@media (#{$bp-larger-than-desktophd}) {}
+@media (min-width: #{$bp-larger-than-desktophd}) {}
