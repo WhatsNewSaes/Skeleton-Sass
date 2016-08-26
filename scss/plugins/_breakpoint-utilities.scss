@@ -2,11 +2,21 @@
 // Author: Troy Meier
 // URL: http://twkm.ca
 
-.u-show-mobile,
-.u-show-phablet,
-.u-show-tablet,
-.u-show-desktop,
-.u-show-desktop-hd {
+.u-show-mobile-block,
+.u-show-mobile-inline-block,
+.u-show-mobile-inline,
+.u-show-phablet-block,
+.u-show-phablet-inline-block,
+.u-show-phablet-inline,
+.u-show-tablet-block,
+.u-show-tablet-inline-block,
+.u-show-tablet-inline,
+.u-show-desktop-block,
+.u-show-desktop-inline-block,
+.u-show-desktop-inline,
+.u-show-desktop-hd-block,
+.u-show-desktop-hd-inline-block,
+.u-show-desktop-hd-inline {
   display: none;
 }
 
