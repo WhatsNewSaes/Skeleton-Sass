@@ -60,10 +60,10 @@
   .eleven.columns       { width: grid-column-width(11); }
   .twelve.columns       { width: 100%; margin-left: 0;  }
 
-  .one-third.column     { width: grid-column-width(4);  }
-  .two-thirds.column    { width: grid-column-width(8);  }
+  .one-third.column     { width: 33.3 - (2*$column-margin/3);  }
+  .two-thirds.column    { width: 66.6 - ($column-margin/3);  }
 
-  .one-half.column      { width: grid-column-width(6);  }
+  .one-half.column      { width: 50 - ($column-margin/2);  }
 
 
   // Offsets
@@ -92,12 +92,12 @@
 
 
   .offset-by-one-third.column,
-  .offset-by-one-third.columns  { margin-left: grid-offset-length(4);  }
+  .offset-by-one-third.columns  { margin-left: 33.3 + ($column-margin/3);  }
   .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns { margin-left: grid-offset-length(8);  }
+  .offset-by-two-thirds.columns { margin-left: 66.6 + (2*$column-margin/3);  }
 
   .offset-by-one-half.column,
-  .offset-by-one-half.column   { margin-left: grid-offset-length(6);  }
+  .offset-by-one-half.column   { margin-left: 50 + ($column-margin/2);  }
 
 
 }
