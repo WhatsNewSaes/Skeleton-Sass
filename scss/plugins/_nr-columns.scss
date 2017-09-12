@@ -1,0 +1,38 @@
+// Non-responsive columns for all device sizes
+// Author: Troy Meier
+// URL: http://twkm.ca
+
+.nr-column,
+.nr-columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.nr-column,
+.nr-columns {
+  margin-left: $column-margin;
+}
+.nr-column:first-child,
+.nr-columns:first-child {
+  margin-left: 0;
+}
+
+.one.nr-column,
+.one.nr-columns          { width: grid-column-width(1);  }
+.two.nr-columns          { width: grid-column-width(2);  }
+.three.nr-columns        { width: grid-column-width(3);  }
+.four.nr-columns         { width: grid-column-width(4);  }
+.five.nr-columns         { width: grid-column-width(5);  }
+.six.nr-columns          { width: grid-column-width(6);  }
+.seven.nr-columns        { width: grid-column-width(7);  }
+.eight.nr-columns        { width: grid-column-width(8);  }
+.nine.nr-columns         { width: grid-column-width(9);  }
+.ten.nr-columns          { width: grid-column-width(10); }
+.eleven.nr-columns       { width: grid-column-width(11); }
+.twelve.nr-columns       { width: 100%; margin-left: 0;  }
+
+.one-third.nr-column     { width: grid-column-width(4);  }
+.two-thirds.nr-column    { width: grid-column-width(8);  }
+
+.one-half.nr-column      { width: grid-column-width(6);  }

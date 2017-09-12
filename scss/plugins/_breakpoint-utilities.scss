@@ -1,0 +1,120 @@
+// Hide/show elements at breakpoints
+// Author: Troy Meier
+// URL: http://twkm.ca
+
+.show-mobile-block,
+.show-mobile-inline-block,
+.show-mobile-inline,
+.show-phablet-block,
+.show-phablet-inline-block,
+.show-phablet-inline,
+.show-tablet-block,
+.show-tablet-inline-block,
+.show-tablet-inline,
+.show-desktop-block,
+.show-desktop-inline-block,
+.show-desktop-inline,
+.show-desktop-hd-block,
+.show-desktop-hd-inline-block,
+.show-desktop-hd-inline {
+  display: none;
+}
+
+@media (max-width: ($bp-larger-than-phablet - 1px)) {
+
+    .hide-mobile {
+      display: none;
+    }
+
+    .show-mobile-block {
+      display: block;
+    }
+
+    .show-mobile-inline-block {
+      display: inline-block;
+    }
+
+    .show-mobile-inline {
+      display: inline;
+    }
+}
+
+@media (min-width: #{$bp-larger-than-phablet}) and (max-width: ($bp-larger-than-tablet - 1px)) {
+
+    .hide-phablet {
+      display: none;
+    }
+
+    .show-phablet-block {
+      display: block;
+    }
+
+    .show-phablet-inline-block {
+      display: inline-block;
+    }
+
+    .show-phablet-inline {
+      display: inline;
+    }
+
+}
+
+@media (min-width: #{$bp-larger-than-tablet }) and (max-width: ($bp-larger-than-desktop - 1px)) {
+
+    .hide-tablet {
+      display: none;
+    }
+
+    .show-tablet-block {
+      display: block;
+    }
+
+    .show-tablet-inline-block {
+      display: inline-block;
+    }
+
+    .show-tablet-inline {
+      display: inline;
+    }
+
+}
+
+@media (min-width: #{$bp-larger-than-desktop}) and (max-width: ($bp-larger-than-desktophd - 1px)) {
+
+    .hide-desktop {
+      display: none;
+    }
+
+    .show-desktop-block {
+      display: block;
+    }
+
+    .show-desktop-inline-block {
+      display: inline-block;
+    }
+
+    .show-desktop-inline {
+      display: inline;
+    }
+
+}
+
+@media (min-width: #{$bp-larger-than-desktophd}) {
+
+    .hide-desktophd {
+      display: none;
+    }
+
+    .show-desktophd-block {
+      display: block;
+    }
+
+    .show-desktophd-inline-block {
+      display: inline-block;
+    }
+
+    .show-desktophd-inline {
+      display: inline;
+    }
+
+}
