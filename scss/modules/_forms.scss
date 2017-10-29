@@ -43,6 +43,11 @@ textarea {
   padding-bottom: 6px;
 }
 
+%focus-style{
+  border: 1px solid $primary-color;
+  outline: 0;
+}
+
 input {
   &[type="email"]:focus,
   &[type="number"]:focus,
@@ -51,15 +56,13 @@ input {
   &[type="tel"]:focus,
   &[type="url"]:focus,
   &[type="password"]:focus {
-    border: 1px solid $primary-color;
-    outline: 0;
+    @extend { %focus-style; }
   }
 }
 
 textarea:focus,
 select:focus {
-  border: 1px solid $primary-color;
-  outline: 0;
+  @extend { %focus-style; }
 }
 
 label,
